@@ -1,0 +1,16 @@
+{
+  "name": "clipcleaner",
+  "version": "1.0.0",
+  "description": "Node js Practice, Clean Ip/DNS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eublan Mata",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "iconv-lite": "^0.6.3"
+  }
+}
