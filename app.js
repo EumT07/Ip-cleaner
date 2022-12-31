@@ -78,12 +78,14 @@ async function clean(){
     switch (cleanData.trim()) {
         case "1":
             releaseIp();
+            await sleep(4000);
             renewIP();
             await sleep(7000);
             clean();
             break;
         case "2":
             displayDNS();
+            await sleep(4000);
             flushingDNS();
             await sleep(4000);
             clean();
