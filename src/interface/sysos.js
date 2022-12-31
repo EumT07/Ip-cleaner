@@ -13,7 +13,7 @@ function getNetworkData(){
     let network =  os.networkInterfaces()
     let netWorkLength = Object.keys(network).length
 
-    if(netWorkLength === 2){
+    if(netWorkLength > 2){
         wifiAdapter = "Wi-Fi"
         return os.networkInterfaces()["Wi-Fi"][1];
     }else{

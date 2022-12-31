@@ -74,12 +74,12 @@ async function clean(){
     console.clear();
     console.log(optionScreen);
     console.log(cleanerScreen);
-    const cleanData = await cmdShell.question("_> ".bold)
+    const cleanData = await cmdShell.question("_> ".blue.bold)
     switch (cleanData.trim()) {
         case "1":
             releaseIp();
             renewIP();
-            await sleep(6000);
+            await sleep(7000);
             clean();
             break;
         case "2":
