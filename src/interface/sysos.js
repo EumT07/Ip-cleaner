@@ -11,11 +11,15 @@ let ethernetAdapter = null;
 
 function getNetworkData(){
     let network =  os.networkInterfaces()
+    console.log(network);
+    console.log(network.hasOwnProperty("Wi-Fi"));
     let netWorkLength = Object.keys(network).length
 
     if(netWorkLength > 2){
-        wifiAdapter = "Wi-Fi"
-        return os.networkInterfaces()["Wi-Fi"][1];
+        if(network.hasOwnProperty("Wi-Fi") === true){
+            wifiAdapter = "Wi-Fi"
+            return os.networkInterfaces()["Wi-Fi"][1];
+        }
     }else{
         ethernetAdapter = "Ethernet"
         return os.networkInterfaces()["Loopback Pseudo-Interface 1"][1];;
