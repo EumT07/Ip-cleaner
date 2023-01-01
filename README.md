@@ -18,7 +18,7 @@ $ git clone : https://github.com/EumT07/Ip-cleaner.git
 $ npm install
 ```
 
-After you clone this repo to your desktop, go to its root directory and run npm install to install its dependencies. Once the dependencies are installed, you can run npm start to start the application.
+After you clone this repo to your desktop, go to its root directory and run npm install to install its dependencies. Once the dependencies are installed, you can run this node app.js to start the application.
 
 <h1 align="center"> Technologies I used </h2>
 
